@@ -1,113 +1,123 @@
 <!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAJ COMPUTER CENTRE</title>
-    <style>
-        /* पूरे पेज की सेटिंग */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* मेनू बार (Navbar) का डिज़ाइन */
-        .navbar {
-            background-color: #2193b0;
-            overflow: hidden;
-        }
-
-        /* मेनू के लिंक्स का डिज़ाइन */
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        /* माउस ले जाने पर (Hover) रंग बदलना */
-        .navbar a:hover {
-            background-color: 90deg;
-            color: black;
-        }
-
-        /* मुख्य कंटेंट एरिया */
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- यहाँ से मेनू बार शुरू होता है -->
-    <div class="navbar">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#services">HELP</a>
-        <a href="#contact">CONTACT ME</a>
-    </div>
-
-    <!-- वेबसाइट का कंटेंट -->
-    <div class="content">
-        <h1>SKILL DEVELOPMENT CENTRE</h1>
-      
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Application Form</title>
+    <title>Skill Development Centre - Internship Application</title>
     <style>
-        /* Modern Gradient Background */
+        /* 1. आधुनिक एनिमेटेड ग्रेडिएंट बैकग्राउंड */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             box-sizing: border-box;
         }
 
-        /* Form Container Design */
-        .form-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 2. प्रीमियम टॉप नेविगेशन बार (Menu) */
+        .navbar {
             width: 100%;
-            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .navbar-menu a:hover, .navbar-menu a.active {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* मुख्य हेडिंग */
+        .main-title {
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        /* 3. ग्लासमोर्फिज्म फॉर्म कंटेनर (Glassmorphism Card) */
+        .form-container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            width: 90%;
+            max-width: 550px;
+            margin-bottom: 50px;
+            box-sizing: border-box;
         }
 
         .form-container h2 {
             text-align: center;
-            color: #333;
+            color: #2c3e50;
+            margin-top: 0;
             margin-bottom: 8px;
+            font-size: 26px;
         }
 
         .form-container p {
             text-align: center;
-            color: #666;
+            color: #7f8c8d;
             font-size: 14px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
-        /* Form Layout Styles */
+        /* इनपुट डिज़ाइन */
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            color: #444;
+            color: #34495e;
             font-weight: 600;
             font-size: 14px;
         }
@@ -116,102 +126,130 @@
         .form-group select, 
         .form-group textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
+            padding: 14px;
+            border: 1px solid #dcdde1;
+            border-radius: 10px;
             font-size: 15px;
+            background-color: #f5f6fa;
+            color: #2f3640;
             box-sizing: border-box;
             transition: all 0.3s ease;
         }
 
-        /* Interactive Focus Effect */
+        /* फोकस इफेक्ट */
         .form-group input:focus, 
         .form-group select:focus, 
         .form-group textarea:focus {
-            border-color: #667eea;
+            border-color: #23a6d5;
             outline: none;
-            box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(35, 166, 213, 0.3);
         }
 
-        /* Submit Button with Hover Effects */
+        /* 4. आधुनिक एनिमेटेड सबमिट बटन */
         .submit-btn {
             width: 100%;
-            padding: 14px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 16px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
             border: none;
-            border-radius: 6px;
+            border-radius: 10px;
             color: white;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: 600;
+            letter-spacing: 1px;
             cursor: pointer;
-            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+            transition: all 0.3s ease;
             margin-top: 10px;
         }
 
         .submit-btn:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            box-shadow: 0 8px 25px rgba(108, 92, 231, 0.6);
+            transform: translateY(-2px);
         }
 
         .submit-btn:active {
             transform: translateY(1px);
         }
+
+        /* मोबाइल रेस्पॉन्सिवनेस */
+        @media (max-width: 600px) {
+            .navbar-menu { gap: 15px; }
+            .navbar-menu a { font-size: 14px; padding: 6px 12px; }
+            .main-title { font-size: 26px; }
+            .form-container { padding: 25px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="form-container">
-    <h2>Internship Application</h2>
-    <p>Please fill out the form below to apply for an internship.</p>
-    
-    <form action="#" method="POST">
-        <!-- Full Name -->
-        <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <!-- टॉप नेविगेशन मेनू बार -->
+    <nav class="navbar">
+        <div class="navbar-menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#help">Help</a>
+            <a href="#contact">Contact Me</a>
         </div>
+    </nav>
 
-        <!-- Email Address -->
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-        </div>
+    <!-- सेंटर का मुख्य नाम -->
+    <h1 class="main-title">Skill Development Centre</h1>
 
-        <!-- Mobile Number -->
-        <div class="form-group">
-            <label for="phone">Mobile Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" required>
-        </div>
+    <!-- मुख्य एप्लीकेशन फॉर्म -->
+    <div class="form-container">
+        <h2>Internship Application</h2>
+        <p>Please fill out the form below to apply for an internship.</p>
+        
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
 
-        <!-- Internship Domain Selection -->
-        <div class="form-group">
-            <label for="domain">Select Domain / Role</label>
-            <select id="domain" name="domain" required>
-                <option value="" disabled selected>Choose a domain</option>
-                <option value="web-dev">Web Development</option>
-                <option value="app-dev">App Development</option>
-                <option value="ui-ux">UI/UX Design</option>
-                <option value="digital-marketing">Digital Marketing</option>
-                <option value="data-science">Data Science</option>
-            </select>
-        </div>
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
 
-        <!-- Resume Drive Link -->
-        <div class="form-group">
-            <label for="resume">Resume Link (Google Drive / Dropbox)</label>
-            <input type="url" id="resume" name="resume" placeholder="https://google.com..." required>
-        </div>
+            <!-- Mobile Number -->
+            <div class="form-group">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" required>
+            </div>
 
-        <!-- Statement of Purpose / Cover Letter -->
-        <div class="form-group">
-            <label for="message">Why do you want to join this internship?</label>
-            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your skills and motivation..."></textarea>
-        </div>
+            <!-- Internship Domain Selection -->
+            <div class="form-group">
+                <label for="domain">Select Domain / Role</label>
+                <select id="domain" name="domain" required>
+                    <option value="" disabled selected>Choose a domain</option>
+                    <option value="web-dev">Web Development</option>
+                    <option value="app-dev">App Development</option>
+                    <option value="ui-ux">UI/UX Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="data-science">Data Science</option>
+                </select>
+            </div>
 
-        <!-- Submit Button -->
-        <button type="submit" class="submit-btn">Submit Application</button>
-    </form>
-</div>
+            <!-- Resume Drive Link -->
+            <div class="form-group">
+                <label for="resume">Resume Link (Google Drive / Dropbox)</label>
+                <input type="url" id="resume" name="resume" placeholder="https://google.com..." required>
+            </div>
+
+            <!-- Statement of Purpose / Cover Letter -->
+            <div class="form-group">
+                <label for="message">Why do you want to join this internship?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Briefly describe your skills and motivation..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
 
 </body>
 </html>
