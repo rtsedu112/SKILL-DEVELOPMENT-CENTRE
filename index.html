@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी पहली skill development centre वेबसाइट</title>
+    <title>मेनू वाली वेबसाइट</title>
     <style>
+        /* पूरे पेज की सेटिंग */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            padding: 50px;
         }
-        h1 { color: #333; }
-        p { color: #666; }
+
+        /* मेनू बार (Navbar) का डिज़ाइन */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* मेनू के लिंक्स का डिज़ाइन */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* माउस ले जाने पर (Hover) रंग बदलना */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* मुख्य कंटेंट एरिया */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>स्वागत है मेरी वेबसाइट पर!</h1>
-    <p>यह वेबसाइट मैंने GitHub Pages की मदद से मुफ्त में बनाई है।</p>
+
+    <!-- यहाँ से मेनू बार शुरू होता है -->
+    <div class="navbar">
+        <a href="#home">होम</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#services">सेवाएं</a>
+        <a href="#contact">संपर्क करें</a>
+    </div>
+
+    <!-- वेबसाइट का कंटेंट -->
+    <div class="content">
+        <h1>मेरी नई मेनू वाली वेबसाइट!</h1>
+        <p>ऊपर काले रंग की पट्टी में आपका मेनू बार तैयार है।</p>
+    </div>
+
 </body>
 </html>
-
